@@ -1,0 +1,27 @@
+Following URIs have been supported and tested for testing purpose of REST
+========================================================================
+
+curl -H "Accept: application/xml" -H "Content-Type: application/xml" -X GET http://127.0.0.1:2002/vrf/green/
+curl -H "Accept: application/xml" -H "Content-Type: application/xml" -X GET http://127.0.0.1:2002/vrf/green/RouterPim.class/
+curl -H "Accept: application/xml" -H "Content-Type: application/xml" -X GET http://127.0.0.1:2002/vrf/green/RouterPim.class/ROUTERPIM_SSMMAP/
+curl -H "Accept: application/xml" -H "Content-Type: application/xml" -X GET http://127.0.0.1:2002/vrf/green/RouterPim.class/ROUTERPIM_SSMMAP/SSMMAP_SRC_ADDRESS
+curl -H "Accept: application/xml" -H "Content-Type: application/xml" -X GET http://127.0.0.1:2002/vrf/green/RouterPim.class/ROUTERPIM_SSMMAP/SSMMAP_PFXLST_NAME
+curl -H "Accept: application/xml" -H "Content-Type: application/xml" -X GET http://127.0.0.1:2002/vrf/green/RouterPim.class/ROUTERPIM_RP_ADDR
+curl -H "Accept: application/xml" -H "Content-Type: application/xml" -X GET http://127.0.0.1:2002/vrf/green/RouterPim.class/ROUTERPIM_HELLO_TIMER
+
+curl -H "Accept: application/xml" -H "Content-Type: application/xml" -X GET http://127.0.0.1:2002/vrf/green/RouterOspf.class/ROUTEROSPF_OSPFDISTANCE
+curl -H "Accept: application/xml" -H "Content-Type: application/xml" -X GET http://127.0.0.1:2002/vrf/green/RouterOspf.class/ROUTEROSPF_OSPFAREA
+
+curl -H "Accept: application/xml" -H "Content-Type: application/xml" -X GET http://127.0.0.1:2002/vrf/red/RouterOspf.class/ABSTRACTROUTERVRF_VRF
+curl -H "Accept: application/xml" -H "Content-Type: application/xml" -X GET http://127.0.0.1:2002/vrf/red/RouterPim.class/ABSTRACTROUTERVRF_VRF
+curl -H "Accept: application/xml" -H "Content-Type: application/xml" -X GET http://127.0.0.1:2002/vrf/red/RouterBgp.class/ABSTRACTROUTERVRF_VRF
+
+
+curl -H "Accept: application/xml" -H "Content-Type: application/xml" -X GET http://127.0.0.1:2002/vrf/green/RouterBgp.class/ROUTERBGP_BGPDISTANCE
+curl -H "Accept: application/xml" -H "Content-Type: application/xml" -X GET http://127.0.0.1:2002/vrf/green/RouterBgp.class/ROUTERBGP_BGPAREA
+
+
+
+
+
+
