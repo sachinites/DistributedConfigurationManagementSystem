@@ -1,6 +1,7 @@
 SLIB = libdcm.so
 EXE = dcm.exe
-TARGET:${EXE} ${SLIB}
+CLILIB=libcli.a
+TARGET:${EXE} ${SLIB} ${CLILIB}
 LIBS = -lpthread
 CC = g++
 CFLAGS = -g -Wunused
@@ -11,5 +12,8 @@ ${EXE}:main.o ${OBJ}
 	${CC} ${CFLAGS} main.o ${OBJ} -o ${EXE} ${LIBS}
 ${SLIB}:${OBJ}
 	${CC} ${CFLAGS} ${OBJ} -shared -o ${SLIB}
+${CLILIB}:
+	(cd CommandParser; make)
 clean:
 	rm ${OBJ} main.o ${SLIB} ${EXE}
+	(cd CommandParser; make clean)
